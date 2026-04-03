@@ -31,7 +31,7 @@ const Header = () => {
             <span className={`font-display text-xl md:text-2xl transition-colors duration-300 ${
               isScrolled ? "text-foreground" : "text-cream"
             }`}>
-              El Refugio del Pescador
+              Refugios del Pescador
             </span>
           </a>
 

@@ -20,7 +20,7 @@ const StorySection = () => {
           {/* Story content */}
           <div className="space-y-6 text-lg md:text-xl text-muted-foreground font-body font-light leading-relaxed">
             <p>
-              El nombre <span className="text-foreground font-normal italic">El Refugio del Pescador</span> no es casualidad. 
+              El nombre <span className="text-foreground font-normal italic">Refugios del Pescador</span> no es casualidad. 
               Nace de una imagen que vive en nuestra memoria: la del pescador artesanal que, después de una jornada 
               en el mar, encuentra en tierra firme un lugar donde descansar, compartir historias y prepararse 
               para el próximo amanecer.

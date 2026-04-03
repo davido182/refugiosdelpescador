@@ -47,7 +47,7 @@ const ReservationSection = () => {
 
             {/* Direct contact option */}
             <a 
-              href="mailto:contacto@elrefugiodelpescador.com?subject=Consulta de disponibilidad"
+              href="mailto:contacto@refugiosdelpescador.com?subject=Consulta de disponibilidad"
               className="group p-8 rounded-2xl border-2 border-primary/10 hover:border-primary/30 bg-secondary/30 hover:bg-secondary/50 transition-all duration-300"
             >
               <div className="flex flex-col items-center text-center">
