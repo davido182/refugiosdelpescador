@@ -33,7 +33,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="font-body text-xl md:text-2xl text-cream/90 font-light max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-in-up animation-delay-200">
-            Donde el mar te invita a quedarte
+            Tu refugio ideal para el descanso
           </p>
 
           {/* Location Tag */}
