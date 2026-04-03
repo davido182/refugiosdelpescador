@@ -28,7 +28,7 @@ const HeroSection = () => {
 
           {/* Main Title */}
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-medium text-cream leading-tight opacity-0 animate-fade-in-up">
-            El Refugio del Pescador
+            Refugios del Pescador
           </h1>
 
           {/* Subtitle */}
