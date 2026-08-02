@@ -1,47 +1,42 @@
+import { useLanguage } from "@/i18n/LanguageContext";
+
 const StorySection = () => {
+  const { t } = useLanguage();
+
   return (
-    <section className="py-24 md:py-32 bg-background">
+    <section id="historia" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Section label */}
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="h-px w-12 bg-primary/20" />
             <span className="font-body text-sm tracking-widest uppercase text-muted-foreground">
-              Nuestra Historia
+              {t.story.label}
             </span>
             <div className="h-px w-12 bg-primary/20" />
           </div>
 
           {/* Title */}
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mb-8 leading-tight">
-            Un refugio nacido del mar
+            {t.story.title}
           </h2>
 
           {/* Story content */}
           <div className="space-y-6 text-lg md:text-xl text-muted-foreground font-body font-light leading-relaxed">
             <p>
-              El nombre <span className="text-foreground font-normal italic">Refugios del Pescador</span> no es casualidad. 
-              Nace de una imagen que vive en nuestra memoria: la del pescador artesanal que, después de una jornada 
-              en el mar, encuentra en tierra firme un lugar donde descansar, compartir historias y prepararse 
-              para el próximo amanecer.
-            </p>
-            
-            <p>
-              Este espacio fue creado para quienes, como el pescador, buscan un lugar auténtico donde dejar atrás 
-              el ruido del mundo y reconectar con lo esencial. Un refugio donde el tiempo se mide por la luz del sol 
-              y el sonido de las olas.
+              {t.story.p1parts[0]}
+              <span className="text-foreground font-normal italic">{t.story.p1parts[1]}</span>
+              {t.story.p1parts[2]}
             </p>
 
-            <p>
-              Aquí, cada rincón habla del océano. Cada detalle invita a la calma. 
-              Porque creemos que viajar a Galápagos no es solo ver islas extraordinarias, 
-              sino también encontrar un lugar donde sentirse verdaderamente en casa.
-            </p>
+            <p>{t.story.p2}</p>
+
+            <p>{t.story.p3}</p>
           </div>
 
           {/* Decorative wave */}
           <div className="mt-16 flex justify-center">
-            <svg className="w-24 h-6 text-primary/20" viewBox="0 0 100 20" fill="currentColor">
+            <svg className="w-24 h-6 text-primary/20" viewBox="0 0 100 20" fill="currentColor" aria-hidden="true">
               <path d="M0 10 Q 12.5 0, 25 10 T 50 10 T 75 10 T 100 10 V 20 H 0 Z" opacity="0.3"/>
               <path d="M0 15 Q 12.5 5, 25 15 T 50 15 T 75 15 T 100 15 V 20 H 0 Z" opacity="0.5"/>
             </svg>

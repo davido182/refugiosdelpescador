@@ -1,6 +1,10 @@
+import { useLanguage } from "@/i18n/LanguageContext";
+
 const LocationSection = () => {
+  const { t } = useLanguage();
+
   return (
-    <section className="py-24 md:py-32 bg-secondary">
+    <section id="ubicacion" className="py-24 md:py-32 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Section header */}
@@ -8,13 +12,13 @@ const LocationSection = () => {
             <div className="flex items-center justify-center gap-4 mb-8">
               <div className="h-px w-12 bg-primary/20" />
               <span className="font-body text-sm tracking-widest uppercase text-muted-foreground">
-                Ubicación
+                {t.location.label}
               </span>
               <div className="h-px w-12 bg-primary/20" />
             </div>
 
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mb-6 leading-tight">
-              Tu punto de partida en Galápagos
+              {t.location.title}
             </h2>
           </div>
 
@@ -24,45 +28,29 @@ const LocationSection = () => {
               {/* Text content */}
               <div className="space-y-6">
                 <div className="flex items-center gap-3 text-accent">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <span className="font-body text-lg font-medium">Islas Galápagos, Ecuador</span>
+                  <span className="font-body text-lg font-medium">{t.location.city}</span>
                 </div>
 
                 <p className="font-body text-muted-foreground text-lg leading-relaxed">
-                  Refugios del Pescador se encuentra en una ubicación privilegiada que combina 
-                  la cercanía a los puntos de interés con la privacidad que buscas. 
-                  Lejos del bullicio pero cerca de todo lo que necesitas.
+                  {t.location.text}
                 </p>
 
-                <div className="space-y-4 pt-4">
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <span className="font-body text-foreground">Zona tranquila y residencial</span>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <span className="font-body text-foreground">Fácil acceso a playas y senderos</span>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <span className="font-body text-foreground">Ambiente seguro y acogedor</span>
-                  </div>
-                </div>
+                <ul className="space-y-4 pt-4">
+                  {t.location.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-4">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                      <span className="font-body text-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               {/* Google Maps embed */}
@@ -76,7 +64,7 @@ const LocationSection = () => {
                     allowFullScreen 
                     loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Ubicación de Refugios del Pescador en Galápagos"
+                    title={t.location.mapTitle}
                     className="w-full h-full"
                   />
                 </div>
