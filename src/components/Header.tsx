@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +28,7 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-4">
           {/* Logo */}
           <a href="/" className="group">
             <span className={`font-display text-xl md:text-2xl transition-colors duration-300 ${
@@ -35,14 +38,17 @@ const Header = () => {
             </span>
           </a>
 
-          {/* CTA */}
-          <Button 
-            variant={isScrolled ? "ocean" : "heroOutline"} 
-            size="sm"
-            onClick={scrollToReserva}
-          >
-            Reservar
-          </Button>
+          <div className="flex items-center gap-3">
+            <LanguageSwitcher inverted={!isScrolled} />
+
+            <Button 
+              variant={isScrolled ? "ocean" : "heroOutline"} 
+              size="sm"
+              onClick={scrollToReserva}
+            >
+              {t.nav.book}
+            </Button>
+          </div>
         </div>
       </div>
     </header>
