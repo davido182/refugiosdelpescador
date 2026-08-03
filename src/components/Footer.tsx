@@ -10,9 +10,18 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo/Name */}
+          <img
+            src={logo}
+            alt="Refugios del Pescador"
+            className="h-20 w-20 md:h-24 md:w-24 object-contain mx-auto mb-6"
+            width={192}
+            height={192}
+            loading="lazy"
+          />
           <h3 className="font-display text-3xl md:text-4xl mb-4">
             Refugios del Pescador
           </h3>
+
           
           <p className="font-body text-cream/70 mb-6">
             {t.footer.city}
