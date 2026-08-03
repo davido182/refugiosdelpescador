@@ -70,7 +70,7 @@ const SpaceSection = () => {
             <div key={card.label} className="bg-background rounded-xl overflow-hidden shadow-soft group">
               <div className="h-48 overflow-hidden">
                 <img
-                  src={[bedroomImage, kitchenImage, loungeImage][index] ?? loungeImage}
+                  src={[bedroomImage, loungeImage, kitchenImage][index] ?? loungeImage}
                   alt={index === 0 ? t.space.bedroomAlt : card.label}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
