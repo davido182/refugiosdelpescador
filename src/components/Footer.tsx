@@ -1,4 +1,5 @@
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import logo from "@/assets/logo-rdp.png";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Footer = () => {
