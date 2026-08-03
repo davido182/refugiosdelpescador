@@ -68,22 +68,15 @@ const SpaceSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {t.space.cards.map((card, index) => (
             <div key={card.label} className="bg-background rounded-xl overflow-hidden shadow-soft group">
-              {index === 0 ? (
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src={bedroomImage}
-                    alt={t.space.bedroomAlt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
-              ) : (
-                <div className="h-48 bg-primary/10 flex items-center justify-center">
-                  <svg className="w-16 h-16 text-primary/30" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                  </svg>
-                </div>
-              )}
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={[bedroomImage, kitchenImage, loungeImage][index] ?? loungeImage}
+                  alt={index === 0 ? t.space.bedroomAlt : card.label}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-3 text-accent">
                   {cardIcons[index]}
