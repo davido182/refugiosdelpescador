@@ -1,5 +1,7 @@
-import interiorImage from "@/assets/interior-living.jpg";
-import bedroomImage from "@/assets/bedroom.jpg";
+import interiorImage from "@/assets/salon-marlin.jpg";
+import bedroomImage from "@/assets/dormitorio.jpg";
+import kitchenImage from "@/assets/cocina.jpg";
+import loungeImage from "@/assets/salon-vista.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const cardIcons = [
