@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://marlin-refugio-web.lovable.app/sitemap.xml
+Sitemap: https://refugiosdelpescador.lovable.app/sitemap.xml
