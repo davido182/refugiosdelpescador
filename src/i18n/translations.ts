@@ -18,6 +18,7 @@ export const translations = {
     },
     hero: {
       title: "Refugios del Pescador",
+      titleDescriptor: "Alojamiento en San Cristóbal, Galápagos",
       subtitle: "Alojamiento en San Cristóbal, Galápagos: tu refugio ideal para el descanso",
       location: "San Cristóbal, Islas Galápagos, Ecuador",
       cta: "Consultar disponibilidad",
@@ -183,6 +184,7 @@ export const translations = {
     },
     hero: {
       title: "Refugios del Pescador",
+      titleDescriptor: "Accommodation in San Cristóbal, Galápagos",
       subtitle: "Accommodation in San Cristóbal, Galápagos: your ideal refuge to slow down",
       location: "San Cristóbal, Galápagos Islands, Ecuador",
       cta: "Check availability",
