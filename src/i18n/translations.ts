@@ -3,7 +3,7 @@ export type Lang = "es" | "en";
 export const translations = {
   es: {
     meta: {
-      title: "Alojamiento en San Cristóbal, Galápagos | Refugios del Pescador",
+      title: "Alojamiento en Galápagos | Refugios del Pescador",
       description:
         "Apartamento completo de 2 dormitorios para 4 personas en San Cristóbal, Galápagos. WiFi y parking gratis, cocina equipada y aire acondicionado. Reserva directa.",
       lang: "es",
@@ -168,7 +168,7 @@ export const translations = {
   },
   en: {
     meta: {
-      title: "Accommodation in San Cristóbal, Galápagos | Refugios del Pescador",
+      title: "Galápagos Stay in San Cristóbal | Refugios",
       description:
         "Entire 2-bedroom apartment for 4 guests in San Cristóbal, Galápagos. Free WiFi and parking, full kitchen and air conditioning. Book your Galápagos stay.",
       lang: "en",
