@@ -332,4 +332,4 @@ export const translations = {
 } as const;
 
 export const BOOKING_URL =
-  "https://www.booking.com/Share-kVpMZ1F";
+  "https://www.booking.com/hotel/ec/refugios-del-pescador.es.html";

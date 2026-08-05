@@ -1,7 +1,8 @@
 import interiorImage from "@/assets/salon-marlin.jpg";
 import bedroomImage from "@/assets/dormitorio.jpg";
+import secondBedroomImage from "@/assets/dormitorio-segundo.jpg";
 import kitchenImage from "@/assets/cocina.jpg";
-import loungeImage from "@/assets/salon-vista.jpg";
+
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const cardIcons = [
@@ -70,7 +71,7 @@ const SpaceSection = () => {
             <div key={card.label} className="bg-background rounded-xl overflow-hidden shadow-soft group">
               <div className="h-48 overflow-hidden">
                 <img
-                  src={[bedroomImage, loungeImage, kitchenImage][index] ?? loungeImage}
+                  src={[bedroomImage, secondBedroomImage, kitchenImage][index] ?? kitchenImage}
                   alt={index === 0 ? t.space.bedroomAlt : card.label}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
