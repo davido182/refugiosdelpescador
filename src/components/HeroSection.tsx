@@ -33,6 +33,9 @@ const HeroSection = () => {
           {/* Main Title */}
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-medium text-cream leading-tight opacity-0 animate-fade-in-up">
             {t.hero.title}
+            <span className="block font-body text-base md:text-xl lg:text-2xl font-light tracking-wide text-cream/80 mt-4">
+              {t.hero.titleDescriptor}
+            </span>
           </h1>
 
           {/* Subtitle */}

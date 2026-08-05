@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://marlin-refugio-web.lovable.app/</loc>
+    <loc>https://refugiosdelpescador.lovable.app/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://marlin-refugio-web.lovable.app/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://marlin-refugio-web.lovable.app/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://marlin-refugio-web.lovable.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://refugiosdelpescador.lovable.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://refugiosdelpescador.lovable.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://refugiosdelpescador.lovable.app/"/>
   </url>
 </urlset>

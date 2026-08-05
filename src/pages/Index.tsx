@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import StorySection from "@/components/StorySection";
@@ -11,6 +12,9 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <link rel="canonical" href="https://refugiosdelpescador.lovable.app/" />
+      </Helmet>
       <Header />
       <main>
         <HeroSection />
