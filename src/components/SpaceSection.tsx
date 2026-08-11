@@ -48,7 +48,7 @@ const SpaceSection = () => {
             <img
               src={interiorImage}
               alt={t.space.livingAlt}
-              className="w-full h-[400px] md:h-[500px] object-cover"
+              className="w-full h-[400px] md:h-[560px] object-cover object-top"
               loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
